@@ -1,11 +1,4 @@
-"""Baseline: OrderByLLM listwise external merge sort (Zhao et al.), m = 4 by default.
-
-We call Zhao's ``order_by.sorting.external_merge_sort`` unchanged, with two guards that keep the
-comparison fair:
-  * a batch whose 10 parse attempts all fail is re-asked (Zhao would silently keep the batch in
-    input order), and the run halts after ``MAX_EXHAUSTED_ROUNDS`` such rounds;
-  * every API request, including Zhao's internal retries, is counted.
-"""
+"""Baseline: OrderByLLM listwise external merge sort (Zhao et al.)."""
 
 from __future__ import annotations
 
