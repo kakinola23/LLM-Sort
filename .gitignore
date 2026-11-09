@@ -1,0 +1,23 @@
+# secrets
+.env
+
+# data that is built locally (see data/README.md)
+data/dl19/dl19_passages_43x100.csv
+data/dl19/dl19_passages_43x100_summary.json
+data/dl19/msmarco-*
+data/scifact/
+data/movielens/ml-1m/
+data/movielens/*.json
+data/amazon/amazon_1m_price_gt*
+data/amazon/priced/
+data/amazon/raw/
+
+# outputs, LLM reply caches, OrderByLLM's prompt cache
+results/
+*.calls.jsonl
+third_party/orderbyllm/sort_cache/
+
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
